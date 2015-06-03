@@ -1,6 +1,6 @@
 #!/bin/bash
 # Simple setup.sh for configuring Ubuntu 14.04 LTS EC2 instance.
-# Update, install (Curl, Node (v.10.x), NPM, Express, Git, NVM, Jshint, Repl, Emacs, Herokutoolbelt, MySql & Dotfiles.
+# Update, install (Curl, Node (v.10.x), NPM, Git, NVM, Jshint, Repl, Emacs, Herokutoolbelt, MySql & Dotfiles.
 
 #Update
 sudo apt-get update
@@ -14,12 +14,6 @@ sudo apt-get install -y nodejs
 
 #NPM npm:node-package manager
 sudo apt-get install npm
-
-#Express
-sudo npm install -g express
-
-#link express
-sudo npm link express
 
 # Install nvm: node-version manager
 # https://github.com/creationix/nvm
