@@ -1,14 +1,14 @@
-var express = require('express');
+// Load the http module to create an http server.
+var http = require('http');
 
-var app = express.createServer(express.logger());
+// Configure HTTP server to respond with Hello World to all requests.
 
-app.get('/', function(req, res){
+var server = http.createServer(function (req, res) {
     res.writeHead(200, {"Content-Type": "text/plain"});
     res.end("Hello World\n");
 });
 
-var port = proces.env.PORT || 8080;
+// Listen on port 8080
+server.listen(8080);
 
-app.listen(port, function(){
-    console.log("Listening to port: " + port)
-});
+console.log("Server running at port 8080");
