@@ -1,6 +1,6 @@
 #!/bin/bash
 # Simple setup.sh for configuring Ubuntu 14.04 LTS EC2 instance.
-# Update, install (Curl, Node, NPM, Express, Git, NVM, Jshint, Repl, Emacs, Herokutoolbelt, MySql & Dotfiles.
+# Update, install (Curl, Node (v.10.x), NPM, Express, Git, NVM, Jshint, Repl, Emacs, Herokutoolbelt, MySql & Dotfiles.
 
 #Update
 sudo apt-get update
@@ -16,10 +16,10 @@ sudo apt-get install -y nodejs
 sudo apt-get install npm
 
 #Express
-npm install -g express
+sudo npm install -g express
 
 #link express
-npm link express
+sudo npm link express
 
 # Install nvm: node-version manager
 # https://github.com/creationix/nvm
@@ -28,7 +28,7 @@ curl https://raw.github.com/creationix/nvm/master/install.sh | sh
 
 # Install jshint to allow checking of JS code within emacs
 # http://jshint.com/
-npm install -g jshint
+sudo npm install -g jshint
 
 # Install rlwrap to provide libreadline features with node
 # See: http://nodejs.org/api/repl.html#repl_repl
